@@ -3,6 +3,8 @@ import 'package:islami_app_online_sat/features/main_layout/main_layout.dart';
 import 'package:islami_app_online_sat/features/splash/splash_screen.dart';
 import 'package:islami_app_online_sat/features/sura_detals/sura_details.dart';
 
+import '../../onBoarding/onboarding_screen.dart';
+
 class RoutesManager {
   static const String splash = "/splash";
   static const String onBoarding = "/onBoarding";
@@ -13,5 +15,6 @@ class RoutesManager {
     splash:(context)=> SplashScreen(),
     mainLayout:(context)=> MainLayout(),
     suraDetails : (context)=>SuraDetails(),
+    onBoarding: (context) => const OnboardingScreen(),
   };
 }
